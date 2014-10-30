@@ -1,0 +1,16 @@
+CREATE TABLE follow
+(
+pengikut varchar2(30) references user(username),
+mengikut varchar2(30) references user(username));
+CREATE TABLE user(
+name varchar2(30),
+username varchar2(30),
+pass varchar2(30),
+location varchar2(20),
+description varchar2(100));
+CREATE TABLE post(
+id integer primary key autoincrement,
+username varchar2(30)  references user(username),
+name varchar2(50),
+post varchar2(160),
+tanggal datetime);

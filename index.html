@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<style type="text/css">
+<!--
+*					{ margin: 0; padding: 0; }
+body				{ font-family: Georgia, serif; background: url('login-page-bg.jpg') top center no-repeat #c4c4c4; color: #3a3a3a;  }
+
+.clear				{ clear: both; }
+
+form				{ width: 406px; margin: 170px auto 0; }
+
+legend				{ display: none; }
+
+fieldset			{ border: 0; }
+
+label				{ width: 115px; text-align: right; float: left; margin: 0 10px 0 0; padding: 9px 0 0 0; font-size: 16px; }
+
+input				{ width: 220px; display: block; padding: 4px; margin: 0 0 10px 0; font-size: 18px;
+					  color: #3a3a3a; font-family: Georgia, serif;}
+					  
+.button				{ background: url('button-bg.png') repeat-x top center; border: 1px solid #999;
+					  -moz-border-radius: 5px; padding: 5px; color: black; font-weight: bold;
+					  -webkit-border-radius: 5px; font-size: 13px;  width: 70px; }
+.button:hover		{ background: white; color: black; }
+
+a { text-decoration:none }
+-->
+</style>
+</head><title>OneWorld</title>
+<body>
+
+<fieldset>
+<legend> Log In</legend>
+<form method="post" action="login.php">
+<label for="login">Username</label><input type="text" name="user">
+<div class="clear"></div>
+
+<label for="password">Password</label><input type="password" name="pword">
+<div class="clear"></div>
+<br>
+<input type="submit" style="margin:-20px 0 0 287px;" value="login" class="button"><br>
+<a href="signup.html" ><input type="button" style="margin:-20px 0 0 287px;" class="button" value="Signup"></a>
+</fieldset>
+</form>
+<fieldset>
+<legend> Log In</legend>
+<form method="post" action="view.php">
+<label for="login">Name Search</label><input type="text" name="user">
+<div class="clear"></div>
+
+<br>
+<input type="submit" style="margin:-20px 0 0 287px;" value="Search" class="button">
+</fieldset>
+</form>
+
+</html>
